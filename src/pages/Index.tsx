@@ -48,43 +48,7 @@ const Index = () => {
       <Footer />
       <ScrollToTop />
 
-      {/* Progress timeline animation styles */}
-      <style jsx global>{`
-        .progress-timeline::before {
-          transform: scaleY(0);
-          transition: transform 1.5s ease;
-        }
-        
-        .progress-timeline.progress-active::before {
-          transform: scaleY(1);
-        }
-        
-        @keyframes pulse-ring {
-          0% {
-            transform: scale(0.8);
-            opacity: 0.8;
-          }
-          50% {
-            transform: scale(1);
-            opacity: 0.5;
-          }
-          100% {
-            transform: scale(0.8);
-            opacity: 0.8;
-          }
-        }
-        
-        .timeline-dot-container::after {
-          content: '';
-          position: absolute;
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          background: rgba(76, 175, 80, 0.3);
-          z-index: -1;
-          animation: pulse-ring 2s infinite;
-        }
-      `}</style>
+      {/* Add timeline animation styles directly to index.css instead */}
     </div>
   );
 };
