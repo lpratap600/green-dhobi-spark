@@ -106,7 +106,7 @@ const PricingSection = () => {
         </div>
 
         <div className="flex justify-center mb-12 animate-on-scroll animate-expand">
-          <Tabs value={pricingMode} onValueChange={setPricingMode} className="w-full max-w-md">
+          <Tabs defaultValue="perkg" className="w-full max-w-md">
             <TabsList className="grid w-full grid-cols-2 p-1 rounded-full bg-gdhobi-neutral">
               <TabsTrigger 
                 value="perkg" 

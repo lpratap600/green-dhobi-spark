@@ -88,13 +88,13 @@ const ServicesSection = () => {
         </div>
 
         <div className="mt-12">
-          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+          <Tabs defaultValue="laundry" className="w-full">
             <TabsList className="w-full flex mb-8 bg-transparent justify-center animate-on-scroll">
               {services.map((service) => (
                 <TabsTrigger 
                   key={service.id}
                   value={service.id}
-                  className={`flex-1 max-w-xs flex items-center gap-2 py-4 px-6 data-[state=active]:bg-gdhobi-green data-[state=active]:text-white transition-all duration-300 ${activeTab === service.id ? 'shadow-md' : ''}`}
+                  className={`flex-1 max-w-xs flex items-center gap-2 py-4 px-6 data-[state=active]:bg-gdhobi-green data-[state=active]:text-white transition-all duration-300`}
                 >
                   {service.title}
                 </TabsTrigger>
