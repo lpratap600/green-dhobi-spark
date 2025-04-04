@@ -88,7 +88,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="mt-12">
-          <Tabs defaultValue="laundry" className="w-full" onValueChange={setActiveTab}>
+          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
             <TabsList className="w-full flex mb-8 bg-transparent justify-center animate-on-scroll">
               {services.map((service) => (
                 <TabsTrigger 

@@ -106,7 +106,7 @@ const PricingSection = () => {
         </div>
 
         <div className="flex justify-center mb-12 animate-on-scroll animate-expand">
-          <Tabs defaultValue="perkg" className="w-full max-w-md" onValueChange={setPricingMode}>
+          <Tabs value={pricingMode} onValueChange={setPricingMode} className="w-full max-w-md">
             <TabsList className="grid w-full grid-cols-2 p-1 rounded-full bg-gdhobi-neutral">
               <TabsTrigger 
                 value="perkg" 
@@ -123,7 +123,7 @@ const PricingSection = () => {
             </TabsList>
             
             <TabsContent value="perkg">
-              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
                 {perKgPricing.map((plan, index) => (
                   <div 
                     key={index} 
@@ -161,7 +161,7 @@ const PricingSection = () => {
             </TabsContent>
 
             <TabsContent value="perpiece">
-              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
                 {perPiecePricing.map((category, index) => (
                   <div 
                     key={index} 
